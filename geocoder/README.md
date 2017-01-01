@@ -1,5 +1,5 @@
 # Concerns::Geocode
-* 
+This concern is used to make a model searchable by distance, either by IP address or street address.
 
 ## Requirements
 * Ruby 2.3.3 or greater
@@ -7,9 +7,8 @@
 * Geocoder gem. See https://github.com/alexreisner/geocoder
 
 ## How it works
-* This concern is used to make a model searchable by distance, either by IP address or street address.
-* The street address is fetched when an IP address is provided and there is no address currently stored.
-* If a street address is already provided, it uses that instead of the IP address to search for objects via a certain distance.
+* The street address is fetched when an IP address is provided **and** the address is unknown.
+* If the street address is known, it uses that instead of the IP address to search for objects via a certain distance.
 
 ## How to use it
 * Include it in any model you want to track location for
