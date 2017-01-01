@@ -7,7 +7,7 @@ A concern that's used to simplify the rendering of certain objects. Useful if th
 
 ## How it works
 * Included in some controllers that handle rendering of html, js, and json.
-* Also works if you also happen to use `remote: true` in your Rails forms. 
+* Also works if you happen to use `remote: true` in your Rails forms. 
 
 ## How to use it
 * Include it in a controller
